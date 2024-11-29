@@ -2,20 +2,15 @@ import { Component } from '@angular/core';
 import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
 @Component({
-    selector: 'app-index',
-    standalone: true,
-    imports: [LayoutDefaultComponent],
-    template: `
+  selector: 'app-index',
+  standalone: true,
+  imports: [LayoutDefaultComponent],
+  template: `
     <layout-default>
-    <ng-template name="menu">
-        MENU
-    </ng-template>
-
-        Siema!
+      <div menu>MENU</div>
+      <p>Hello World</p>
     </layout-default>
-    `,
-    styles: []
+  `,
+  styles: [],
 })
-export default class IndexComponent {
-
-}
+export default class IndexComponent {}
