@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <aside class="w-1/6">
-      <img src="logo.png" class="h-24 m-auto" />
+      <img src="logo.png" class="w-full p-5 m-auto" />
       <div
         class="h-24 w-24 m-auto mt-20 rounded-full bg-yellow-300 p-1 pb-0 overflow-hidden"
       >
