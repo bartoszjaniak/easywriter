@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'layout-default',
-    imports: [],
-    template: `
+  selector: 'layout-default',
+  template: `
     <aside class="w-1/6">
       <img src="logo.png" class="w-full p-5 m-auto" />
       <div
@@ -21,15 +20,15 @@ import { Component } from '@angular/core';
         <a href="#">Contact</a>
       </nav>
     </aside>
-    <main class="w-5/6">
+    <main class="w-5/6 p-5">
       <ng-content></ng-content>
     </main>
   `,
-    host: {
-        class: 'flex min-h-screen min-w-full',
-    },
-    styles: [
-        `
+  host: {
+    class: 'flex min-h-screen min-w-full',
+  },
+  styles: [
+    `
       aside {
         border-right: 2px solid transparent;
         border-image: linear-gradient(
@@ -43,6 +42,6 @@ import { Component } from '@angular/core';
           1;
       }
     `,
-    ]
+  ],
 })
 export class LayoutDefaultComponent {}

@@ -3,24 +3,24 @@ import { MatIconModule } from '@angular/material/icon';
 import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
 @Component({
-    selector: 'app-index',
-    imports: [LayoutDefaultComponent, MatIconModule],
-    template: `
+  selector: 'app-index',
+  imports: [LayoutDefaultComponent, MatIconModule],
+  template: `
     <layout-default>
-      <div class="flex w-full">
-        <div>
-          <h1 class="text-3xl font-bold">Hallo, Bart</h1>
-          <p class="text-gray-500">What do you want to do today?</p>
+      <div class="flex w-full justify-between gap-4 mb-10">
+        <div class="flex-grow">
+          <h1 class="text-2xl font-bold text-left">Hallo, Bart</h1>
+          <p class="text-gray-500 text-left">What do you want to do today?</p>
         </div>
 
         <button
-          class="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          class="flex items-center justify-center bg-gray-200 text-white font-bold py-1 px-1 rounded h-10 w-10"
         >
-          Add new project
+          <mat-icon>search</mat-icon>
         </button>
 
         <button
-          class="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          class="flex items-center justify-center bg-black  text-white font-bold py-2 px-4 rounded h-10"
         >
           Add new project
         </button>
@@ -80,6 +80,6 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
       </div>
     </layout-default>
   `,
-    styles: []
+  styles: [],
 })
 export default class IndexComponent {}
