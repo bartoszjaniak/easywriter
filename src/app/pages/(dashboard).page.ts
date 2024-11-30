@@ -3,10 +3,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
 @Component({
-  selector: 'app-index',
-  standalone: true,
-  imports: [LayoutDefaultComponent, MatIconModule],
-  template: `
+    selector: 'app-index',
+    imports: [LayoutDefaultComponent, MatIconModule],
+    template: `
     <layout-default>
       <div class="flex w-full">
         <div>
@@ -81,6 +80,6 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
       </div>
     </layout-default>
   `,
-  styles: [],
+    styles: []
 })
 export default class IndexComponent {}
