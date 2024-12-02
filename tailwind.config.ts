@@ -12,5 +12,10 @@ export default {
       },
     },
   },
+  safelist: [
+    {
+      pattern: /^bg-my-/,
+    },
+  ],
   plugins: [],
 } satisfies Config;
