@@ -28,15 +28,15 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
       <div class="flex flex-col space-y-6">
         <div class="grid grid-cols-3 gap-6">
-          <div class="bg-purple-500 p-6 rounded-lg shadow-lg">
+          <div class="bg-my-purple text-white p-6 rounded-lg shadow-lg">
             <h3 class="text-white font-bold text-lg">Web Development</h3>
             <p class="text-white mt-2">Design & Develop Mobile Apps</p>
           </div>
-          <div class="bg-blue-500 p-6 rounded-lg shadow-lg">
+          <div class="bg-my-teal text-white p-6 rounded-lg shadow-lg">
             <h3 class="text-white font-bold text-lg">Mobile App Design</h3>
             <p class="text-white mt-2">Create intuitive mobile apps</p>
           </div>
-          <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+          <div class="bg-my-orange text-white p-6 rounded-lg shadow-lg">
             <h3 class="text-white font-bold text-lg">Facebook Brand Kit</h3>
             <p class="text-white mt-2">Build your Facebook brand kit</p>
           </div>
