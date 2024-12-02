@@ -14,7 +14,7 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
         </div>
 
         <button
-          class="flex items-center justify-center bg-gray-200 text-white font-bold py-1 px-1 rounded h-10 w-10"
+          class="flex items-center justify-center bg-slate-300 text-white font-bold py-1 px-1 rounded h-10 w-10"
         >
           <mat-icon>search</mat-icon>
         </button>
@@ -28,9 +28,27 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
       <div class="flex flex-col space-y-6">
         <div class="grid grid-cols-3 gap-6">
-          <div class="bg-my-purple text-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-white font-bold text-lg">Web Development</h3>
-            <p class="text-white mt-2">Design & Develop Mobile Apps</p>
+          <div
+            class="bg-my-purple text-white p-3 rounded-lg shadow-lg text-left"
+          >
+            <button
+              class="flex items-center justify-center text-white font-bold py-1 px-1 rounded h-10 w-10 ml-auto mb-4"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <h3 class="text-white font-bold text-lg">Przejście</h3>
+            <p class="text-white mt-2">Sci-fi</p>
+            <p class="text-neutral-300 text-xs mt-2 text-center mb-2">
+              254 pages
+            </p>
+            <div
+              class="w-full bg-neutral-500 bg-opacity-50 rounded-full h-1.5 mb-4"
+            >
+              <div
+                class="bg-neutral-300 h-1.5 rounded-full "
+                style="width: 45%"
+              ></div>
+            </div>
           </div>
           <div class="bg-my-teal text-white p-6 rounded-lg shadow-lg">
             <h3 class="text-white font-bold text-lg">Mobile App Design</h3>

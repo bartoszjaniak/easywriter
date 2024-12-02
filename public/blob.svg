@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 540 540)" id="21834222-ba0a-4e49-aeea-718686140da0"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="6e94d152-4f03-41ab-a2c6-b31ad2ede8c7"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(3.81 0 0 3.81 512.53 570.04)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(209,233,235); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-135.68, 135.2)" d="M 0 -270.4 C 22.1 -250.6 44.2 -230.8 73.2 -225.4 C 102.3 -220 138.2 -229 155.8 -214.4 C 173.3 -199.8 172.5 -161.5 189.3 -137.5 C 206.2 -113.6 240.7 -104.1 257.2 -83.6 C 273.6 -63 272 -31.5 270.4 0 L 0 0 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(4.95 0 0 4.95 333.16 750.23)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(162,211,216); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-67.84, 67.6)" d="M 0 -135.2 C 11.1 -125.3 22.1 -115.4 36.6 -112.7 C 51.1 -110 69.1 -114.5 77.9 -107.2 C 86.7 -99.9 86.2 -80.7 94.7 -68.8 C 103.1 -56.8 120.4 -52 128.6 -41.8 C 136.8 -31.5 136 -15.8 135.2 0 L 0 0 Z" stroke-linecap="round" />
+</g>
+</svg>

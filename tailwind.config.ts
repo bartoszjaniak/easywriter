@@ -8,6 +8,7 @@ export default {
         'my-purple': '#71357c',
         'my-teal': '#94d1d1',
         'my-orange': '#fe7e53',
+        'my-paper': '#faf4f0',
       },
     },
   },
