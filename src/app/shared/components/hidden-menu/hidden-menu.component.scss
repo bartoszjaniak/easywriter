@@ -1,0 +1,37 @@
+@import "colors";
+
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+    .content {
+        flex: 1;
+        display: grid;
+    }
+
+    .menu {
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background: #f3f3f3;
+
+        .menu {
+            opacity: 1;
+
+            &:hover {
+                background-color: $white;
+                border: 1px solid $separator-ultra-light;
+            }
+        }
+    }
+}

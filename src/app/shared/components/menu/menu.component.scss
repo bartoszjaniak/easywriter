@@ -1,0 +1,35 @@
+.dropdown {
+    width: 22px;
+    border-radius: 2px;
+
+    .dropbtn {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        z-index: 100;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        font-weight: initial;
+    }
+
+    .dropdown-content button {
+        width: 100%;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content button:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+}

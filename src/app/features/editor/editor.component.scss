@@ -1,0 +1,70 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .content {
+    flex: 1;
+    overflow: auto;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.4s ease-out;
+
+    &.loaded {
+      opacity: 1;
+    }
+
+    .chapter {
+      max-width: 700px;
+      font-size: 60px;
+      padding: 0 20px;
+      margin: 60px 0;
+      text-align: center;
+      border: none;
+      overflow: hidden;
+
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      resize: none;
+    }
+
+    #editorjs {
+      max-width: 700px;
+      width: 100%;
+      padding: 20px;
+      font-size: 16px;
+      flex: 1;
+    }
+  }
+}
+::ng-deep {
+  .codex-editor {
+    .ce-paragraph {
+      text-indent: 50px;
+    }
+    .ce-header {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+}

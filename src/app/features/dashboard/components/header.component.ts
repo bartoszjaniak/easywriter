@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-header',
-  imports: [MatIconModule],
+  imports: [MatIconModule, RouterModule],
   template: `
     <div class="flex w-full justify-between gap-4 mb-10">
       <div class="flex-grow">
@@ -17,11 +18,12 @@ import { MatIconModule } from '@angular/material/icon';
         <mat-icon>search</mat-icon>
       </button>
 
-      <button
+      <a
+        routerLink="/editor/new"
         class="flex items-center justify-center bg-black  text-white font-bold py-2 px-4 rounded h-10"
       >
         Add new project
-      </button>
+      </a>
     </div>
   `,
 })

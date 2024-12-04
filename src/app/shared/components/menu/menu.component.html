@@ -1,0 +1,13 @@
+<div class="dropdown">
+  <button click-stop-propagation (click)="toggleDropdown()" class="dropbtn">
+    <i class="fa-solid fa-ellipsis"></i>
+  </button>
+
+  <div #dropdown class="dropdown-content">
+    @for (item of positions; track item.key) {
+    <button click-stop-propagation (click)="onAction.emit(item.key)">
+      {{ item.label }}
+    </button>
+    }
+  </div>
+</div>

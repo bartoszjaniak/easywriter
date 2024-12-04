@@ -1,0 +1,9 @@
+<div class="content">
+  <ng-content />
+</div>
+<app-menu
+  click-stop-propagation
+  class="menu"
+  [positions]="menuPositions"
+  (onAction)="onAction.emit($event)"
+></app-menu>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { DashboardAllBooksComponent } from '../features/dashboard/components/all-books.component';
+import { DashboardHeaderComponent } from '../features/dashboard/components/header.component';
+import { LastActivityComponent } from '../features/dashboard/components/last-activity.component';
 import { LastBooksComponent } from '../features/dashboard/components/last-books.component';
 import { DashboardPremiumComponent } from '../features/dashboard/components/premium.component';
 import { DashboardStatisticsComponent } from '../features/dashboard/components/statistics.component';
@@ -15,9 +17,12 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
     DashboardAllBooksComponent,
     DashboardStatisticsComponent,
     DashboardPremiumComponent,
+    DashboardHeaderComponent,
+    LastActivityComponent,
   ],
   template: `
     <layout-default>
+      <app-dashboard-header />
       <div class="flex flex-col space-y-6 max-h-full">
         <app-last-books />
 
@@ -29,6 +34,8 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
           </div>
         </div>
       </div>
+
+      <app-last-activity rightAside />
     </layout-default>
   `,
   styles: [],

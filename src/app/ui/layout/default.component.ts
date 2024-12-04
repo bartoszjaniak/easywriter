@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { DashboardHeaderComponent } from '../../features/dashboard/components/header.component';
 
 @Component({
   selector: 'layout-default',
-  imports: [DashboardHeaderComponent],
+  imports: [],
+  host: {
+    class: 'flex min-h-screen min-w-full bg-my-paper',
+  },
   template: `
-    <aside class="w-1/6 bg-white flex flex-col">
+    <aside class="w-1/6 bg-white flex flex-col text-center">
       <img src="logo.png" class="max-w-full max-h-16 p-5 m-auto" />
       <div
         class="h-24 w-24 m-auto mt-20 rounded-full bg-yellow-300 p-1 pb-0 overflow-hidden"
@@ -24,14 +26,13 @@ import { DashboardHeaderComponent } from '../../features/dashboard/components/he
       <img src="blob.svg" class="max-w-[80%]" />
     </aside>
     <main class="w-4/6 p-5 bg-white rounded-r-3xl max-h-screen overflow-auto">
-      <app-dashboard-header />
       <ng-content></ng-content>
     </main>
-    <aside class="w-1/6"></aside>
+    <aside class="w-1/6 pt-10 p-6">
+      <ng-content select="[rightAside]"></ng-content>
+    </aside>
   `,
-  host: {
-    class: 'flex min-h-screen min-w-full bg-my-paper',
-  },
+
   styles: [
     `
       aside {
