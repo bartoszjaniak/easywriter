@@ -5,8 +5,13 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-dashboard-all-books-card',
   imports: [MatIconModule],
   host: {
-    class:
-      'block relative border-l-my-purple border-l-8 p-4 rounded mb-4 shadow text-left',
+    class: `
+    block
+     relative 
+      border-l-my-orange 
+      border-l-8 p-4
+      rounded shadow
+      text-left`,
   },
   template: `
     <p class="font-bold">Ogniem i mieczem</p>

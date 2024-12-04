@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { DashboardHeaderComponent } from '../../features/dashboard/components/header.component';
 
 @Component({
   selector: 'layout-default',
+  imports: [DashboardHeaderComponent],
   template: `
     <aside class="w-1/6 bg-white flex flex-col">
       <img src="logo.png" class="max-w-full max-h-16 p-5 m-auto" />
@@ -21,7 +23,8 @@ import { Component } from '@angular/core';
       </nav>
       <img src="blob.svg" class="max-w-[80%]" />
     </aside>
-    <main class="w-4/6 p-5 bg-white rounded-r-3xl">
+    <main class="w-4/6 p-5 bg-white rounded-r-3xl max-h-screen overflow-auto">
+      <app-dashboard-header />
       <ng-content></ng-content>
     </main>
     <aside class="w-1/6"></aside>
