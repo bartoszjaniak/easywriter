@@ -2,12 +2,11 @@ import { CommonModule } from '@angular/common';
 import {
   Component,
   ElementRef,
-  EventEmitter,
   HostListener,
-  Input,
-  Output,
   ViewChild,
   inject,
+  input,
+  output,
 } from '@angular/core';
 import { ClickStopPropagationDirective } from '../../directives/stop-propagation.directive';
 
@@ -19,11 +18,9 @@ import { ClickStopPropagationDirective } from '../../directives/stop-propagation
   styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
-  @Input()
-  public positions!: { label: string; key: string }[];
+  public positions = input<{ label: string; key: string }[]>();
 
-  @Output()
-  public onAction = new EventEmitter<string>();
+  public onAction = output<string>();
 
   private elementRef = inject(ElementRef);
 

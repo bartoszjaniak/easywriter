@@ -4,7 +4,7 @@
   </button>
 
   <div #dropdown class="dropdown-content">
-    @for (item of positions; track item.key) {
+    @for (item of positions(); track item.key) {
     <button click-stop-propagation (click)="onAction.emit(item.key)">
       {{ item.label }}
     </button>

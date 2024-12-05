@@ -1,0 +1,26 @@
+<p class="title">
+  <span>Spis treści</span>
+  <button (click)="addChapter()">
+    <i class="new fa-solid fa-plus"></i>
+  </button>
+</p>
+
+<ul>
+  @for (item of chapters; track item.id) {
+  <li routerLinkActive="selected">
+    <a [routerLink]="[item.id]">
+      <app-hidden-menu
+        [menuPositions]="menuPositions"
+        (onAction)="onMenuAction($event, item.id)"
+      >
+        {{ item.name }}</app-hidden-menu
+      ></a
+    >
+  </li>
+  } @empty {
+  <li class="empty">
+    <span>Dodaj rozdział i zacznij pisać </span
+    ><i class="arrow fa-solid fa-arrow-turn-up"></i>
+  </li>
+  }
+</ul>

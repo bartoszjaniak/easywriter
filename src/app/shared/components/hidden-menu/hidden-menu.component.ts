@@ -10,7 +10,6 @@ export interface HiddenMenuPosition {
 
 @Component({
   selector: 'app-hidden-menu',
-  standalone: true,
   imports: [CommonModule, MenuComponent, ClickStopPropagationDirective],
   templateUrl: './hidden-menu.component.html',
   styleUrl: './hidden-menu.component.scss',
