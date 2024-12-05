@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-loading',
   standalone: true,
   imports: [],
-  template: '<span class="loader"></span><span class="text"><ng-content/><span>',
+  template:
+    '<span class="loader"></span><span class="text"><ng-content/><span>',
   styles: `
     @import 'colors';
 
@@ -41,8 +42,6 @@ import { Component } from '@angular/core';
     color: $blue-munsell;
     box-sizing: border-box;
     animation: animloader 1s linear infinite alternate;
-  } `
+  } `,
 })
-export class LoadingComponent {
-
-}
+export class LoadingComponent {}

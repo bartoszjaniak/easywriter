@@ -29,5 +29,9 @@ export default {
       pattern: /^bg-my-/,
     },
   ],
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')({
+      charts: true,
+    }),
+  ],
 } satisfies Config;
