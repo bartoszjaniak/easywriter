@@ -13,8 +13,14 @@ export class ChartComponent implements AfterViewInit {
     const options = {
       series: [
         {
-          name: 'Developer Edition',
-          data: [1500, 1418, 1456, 1526, 1356, 1256],
+          name: 'Written words',
+          data: [
+            { x: '2022-01-01', y: 150 },
+            { x: '2022-01-02', y: 200 },
+            { x: '2022-01-03', y: 300 },
+            { x: '2022-01-04', y: 100 },
+            { x: '2022-01-05', y: 500 },
+          ],
           color: '#000',
         },
       ],
@@ -30,7 +36,7 @@ export class ChartComponent implements AfterViewInit {
         },
       },
       xaxis: { show: false },
-      yaxis: { show: false },
+      yaxis: { min: 0, show: false },
       dataLabels: {
         enabled: false,
       },

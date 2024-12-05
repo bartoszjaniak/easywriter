@@ -17,7 +17,8 @@ import { DashboardHeaderComponent } from '../../features/dashboard/components/he
       </div>
       <nav class="flex flex-col flex-grow gap-10">
         <mat-icon>home</mat-icon>
-        <mat-icon>library_books </mat-icon>
+        <mat-icon>article</mat-icon>
+        <mat-icon>inventory_2</mat-icon>
         <mat-icon>settings</mat-icon>
       </nav>
 
