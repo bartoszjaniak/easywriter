@@ -22,7 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
     </div>
     <div class="flex items-center bg-white shadow p-2 rounded gap-6 w-full">
       <div
-        class="flex items-center justify-center w-10 h-10 bg-my-teal-light rounded"
+        class="flex items-center justify-center w-10 h-10 bg-my-orange-light rounded"
       >
         <mat-icon>timer</mat-icon>
       </div>
@@ -33,7 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     </div>
     <div class="flex items-center bg-white shadow p-2 rounded gap-6 w-full">
       <div
-        class="flex items-center justify-center w-10 h-10 bg-my-teal-light rounded"
+        class="flex items-center justify-center w-10 h-10 bg-my-purple-light rounded"
       >
         <mat-icon>group</mat-icon>
       </div>
