@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { DashboardAllBooksComponent } from '../features/dashboard/components/all-books.component';
-import { DashboardHeaderComponent } from '../features/dashboard/components/header.component';
-import { LastActivityComponent } from '../features/dashboard/components/last-activity.component';
+import { DashboardInvitationComponent } from '../features/dashboard/components/invitation.component';
 import { LastBooksComponent } from '../features/dashboard/components/last-books.component';
-import { DashboardPremiumComponent } from '../features/dashboard/components/premium.component';
 import { DashboardStatisticsComponent } from '../features/dashboard/components/statistics.component';
 import { LayoutDefaultComponent } from '../ui/layout/default.component';
 
@@ -14,28 +11,20 @@ import { LayoutDefaultComponent } from '../ui/layout/default.component';
     LayoutDefaultComponent,
     MatIconModule,
     LastBooksComponent,
-    DashboardAllBooksComponent,
+    DashboardInvitationComponent,
     DashboardStatisticsComponent,
-    DashboardPremiumComponent,
-    DashboardHeaderComponent,
-    LastActivityComponent,
   ],
   template: `
     <layout-default>
-      <app-dashboard-header />
-      <div class="flex flex-col space-y-6 max-h-full">
-        <app-last-books />
-
-        <div class="flex gap-12 justify-between flex-grow">
-          <app-dashboard-all-books class="flex-grow" />
-          <div class="flex flex-col gap-4 flex-grow">
-            <app-dashboard-statistics class="flex-grow" />
-            <app-dashboard-premium />
-          </div>
+      <div class="grid grid-cols-[2fr_1fr] gap-10">
+        <div>
+          <app-dashboard-invitation class="mb-10" />
+          <app-last-books />
         </div>
+        <aside class="w-full"><app-dashboard-statistics /></aside>
       </div>
 
-      <app-last-activity rightAside />
+      <!-- <app-last-activity rightAside /> -->
     </layout-default>
   `,
   styles: [],

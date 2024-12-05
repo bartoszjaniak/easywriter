@@ -1,36 +1,32 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { DashboardHeaderComponent } from '../../features/dashboard/components/header.component';
 
 @Component({
   selector: 'layout-default',
-  imports: [],
+  imports: [MatIconModule, DashboardHeaderComponent],
   host: {
-    class: 'flex min-h-screen min-w-full bg-my-paper',
+    class: 'flex min-h-screen min-w-full',
   },
   template: `
-    <aside class="w-1/6 bg-white flex flex-col text-center">
-      <img src="logo.png" class="max-w-full max-h-16 p-5 m-auto" />
-      <div
-        class="h-24 w-24 m-auto mt-20 rounded-full bg-yellow-300 p-1 pb-0 overflow-hidden"
-      >
+    <aside
+      class="flex flex-col items-center w-20 bg-black text-white rounded-3xl m-6 p-3 py-6 shadow"
+    >
+      <div class="h-10 w-10 rounded-full bg-white overflow-hidden mb-20">
         <img src="photo.png" class="max-w-full max-h-full m-auto" />
       </div>
-
-      <div class="mt-4 font-bold">John Doe</div>
-      <div class="text-sm text-gray-500">john.doe&#64;mail.com</div>
-
-      <nav class="mt-32 flex flex-col gap-4 flex-grow">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+      <nav class="flex flex-col flex-grow gap-10">
+        <mat-icon>home</mat-icon>
+        <mat-icon>library_books </mat-icon>
+        <mat-icon>settings</mat-icon>
       </nav>
-      <img src="blob.svg" class="max-w-[80%]" />
+
+      <mat-icon>logout</mat-icon>
     </aside>
-    <main class="w-4/6 p-5 bg-white rounded-r-3xl max-h-screen overflow-auto">
+    <main class="flex-grow p-6 max-h-screen overflow-auto">
+      <app-dashboard-header />
       <ng-content></ng-content>
     </main>
-    <aside class="w-1/6 pt-10 p-6">
-      <ng-content select="[rightAside]"></ng-content>
-    </aside>
   `,
 
   styles: [
